@@ -1,0 +1,664 @@
+/*body{
+    background-color: beige;
+}
+*/
+@font-face{
+    font-family: "Ubuntu-Regular";
+    src: url('../assets/font/Ubuntu-Regular.ttf');
+}
+
+@font-face{
+    font-family: "Ubuntu-Medium";
+    src: url('../assets/font/Ubuntu-Medium.ttf');
+}
+
+@font-face{
+    font-family: "Ubuntu-LightItalic";
+    src: url('../assets/font/Ubuntu-LightItalic.ttf');
+}
+
+body{
+    /*background-image: url(../assets/background/rename.webp);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Ubuntu-Regular";
+}
+
+p{
+    /*color: #3d9915;*/
+    line-height: 2;
+    font-size: 15px;
+    color: #6c757d;
+}
+
+h2{
+    color: #3d9915;
+    font-size: 20px;
+}
+
+h3{
+    color: #6c757d;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Ubuntu-Medium";
+}
+
+h4{
+    color: #6c757d;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Ubuntu-Medium";
+}
+
+/*Imagenes*/
+.logo_header{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.img_side{
+    height: 300px;
+    border-radius: 10px;
+}
+
+.img_side--contact{
+    height: 300px;
+    border-radius: 10px;
+    filter: grayscale(100) opacity(.6);
+}
+
+.img_size_chef{
+    height: 250px;
+}
+
+.img_side--historia{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.img_size--hist_2{
+    height: 250px;
+}
+
+.img_size--hist_2--logo{
+    height: 50px;
+}
+
+.img_size--hist_2--otros{
+    height: 25px;
+}
+
+.img_side--productos{
+    width: 450px;
+    border-radius: 10px;
+}
+
+.img_side--recetas{
+    width: 500px;
+    border-radius: 10px;
+}
+
+.aviso{
+    color: red;
+    text-align: center;
+}
+
+/*Menu Opciones*/
+.menu{ 
+    height: 30px;
+    padding-top: 10px;
+    background-color: #c7f9cc;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;   
+    vertical-align: middle;
+}
+
+/*Footer*/
+
+.footer_redes{
+    padding-top: 10px;
+    height: 40px;
+    background-color: #c7f9cc;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer_text{
+    text-align: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+/*--------------------------------------------GRID INICIO--------------------------------------------------*/
+
+
+
+.header_vp {  
+    background-color: #6c757d;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". imagen ."
+      ". menu .";
+}
+
+.header_vp .logo{
+    
+    grid-column: 2;
+    grid-row: 1;
+    height: 50px;
+    border-radius: 10px;
+}
+.header_vp .menu{
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.body_vp{
+    /*height: 80vh;*/
+    background-color: #c7f9cc;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.footer_vp{
+    background-color:#3d9915;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+}
+
+/*--------------------------------------------Seccion Introducción------------------------------------------*/
+
+.tarjeta{
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    height: 330px;
+    padding-top: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.tarjeta--recomendaciones{
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    height: 380px;
+    padding-top: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.tarjeta__img1{
+    padding: 5px;
+    left: 10px;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+}
+
+.tarjeta__parrafo1{
+    padding: 5px;
+    margin-left: 20px;
+    width: 1200px;
+    height: 250px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+
+.tarjeta__img2{
+    padding: 5px;
+    right: 10px;
+    margin-left: 10px;
+    width: 240px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+}
+.tarjeta__parrafo2{
+    padding: 5px;
+    left: 10px;
+    width: 1200px;
+    height: 250px;
+    display: inline-block;
+    position: absolute;  
+}
+
+/*Seccion Recomendaciones*/
+
+.center {
+    margin: auto;
+    width: 50%;
+    text-align: center;     
+}
+
+.tarjeta__titulo{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    border: solid 1px black;
+}
+
+
+.tarjeta__img3a{
+    padding: 5px;
+    left: 10px;
+    bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+}
+.tarjeta__parrafo3a{
+    padding: 5px;
+    left: 240px;
+    width: 250px;
+    margin-top: 10px;
+    height: 250px;
+    display: inline-block;
+    position: absolute;  
+}
+
+.tarjeta__img3b{
+    padding: 5px;
+    left: 520px;
+    bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+}
+.tarjeta__parrafo3b{
+    padding: 5px;
+    left: 750px;
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    position: absolute;  
+}
+
+.tarjeta__img3c{
+    padding: 5px;
+    left: 1020px;
+    bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    
+}
+.tarjeta__parrafo3c{
+    padding: 5px;
+    left: 1250px;
+    width: 250px;
+    margin-top: 10px;
+    height: 250px;
+    display: inline-block;
+    position: absolute;  
+}
+
+.tarjeta__cita{
+    font-family: "Ubuntu-LightItalic";
+    font-size: 15px;
+}
+
+
+/*Seccion de Contacto*/
+
+.tarjeta--contact{
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    height: 560px;
+    padding-top: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.tarjeta__img1--contact{
+    padding: 5px;
+    left: 280px;
+    margin-top: 50px;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+}
+.tarjeta__parrafo1--contact{
+    padding: 5px;
+    left: 650px;
+    margin-left: 20px;
+    width: 600px;
+    height: 250px;
+    display: inline-block;
+    position: absolute;
+    color: #6c757d;
+}
+
+.button_enviar{
+    color: #6c757d;
+    background-color: #c7f9cc;
+    border: solid 1px #6c757d;
+    border-radius: 7px;
+    height: 30px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Ubuntu-Medium";
+    cursor: pointer;
+}
+
+.button_reset{
+    color: #6c757d;
+    background-color: lightgrey;
+    border: solid 1px #6c757d;
+    border-radius: 7px;
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Ubuntu-Medium";
+    cursor: pointer;
+}
+
+/*------------------------------------Seccion de Historia-------------------------------------*/
+
+/*parte superior*/
+
+.tarjeta--historia{
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    height: 300px;
+    padding-top: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.tarjeta__img1--historia{
+    padding: 5px;
+    left: 10px;
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+}
+
+.tarjeta__parrafo1--historia{
+    padding: 5px;
+    right: 10px;
+    margin-left: 20px;
+    width: 1100px;
+    height: 250px;
+    display: inline-block;
+    position: absolute;
+    color: #6c757d;
+}
+
+/*parte inferior*/
+
+.tarjeta--historia2{
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    height: 320px;
+    padding-top: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.tarjeta__img2--hist_left{
+    padding: 25px 5px 5px 5px;
+    margin-top: 20px;
+    left: 250px;
+    width: 200px;
+    height: 280px;
+    display: inline-block;
+    position: absolute;
+    /*border: solid 1px black;*/
+    text-align: center;
+}
+
+.tarjeta__parrafo2--hist_left{
+    padding: 5px;
+    margin-top: 20px;
+    left: 450px;
+    margin-left: 20px;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+    /*border: solid 1px black;*/
+    text-align: center;
+}
+
+.tarjeta__img2--hist_middle{
+    padding: 65px 5px 5px 5px;
+    margin-top: 20px;
+    left: 690px;
+    width: 200px;
+    height: 240px;
+    display: inline-block;
+    position: absolute;
+    /*border: solid 1px black;*/
+    text-align: center;
+    line-height: 30px;
+}
+
+.tarjeta__parrafo2--hist_right{
+    padding: 30px 5px 5px 5px;
+    margin-top: 20px;
+    left: 890px;
+    margin-left: 20px;
+    width: 200px;
+    height: 275px;
+    display: inline-block;
+    position: absolute;
+    /*border: solid 1px black;*/
+    text-align: center;
+}
+
+.tarjeta__img2--hist_right{
+    padding: 25px 5px 5px 5px;
+    margin-top: 20px;
+    left: 1130px;
+    width: 200px;
+    height: 280px;
+    display: inline-block;
+    position: absolute;
+    /*border: solid 1px black;*/
+    text-align: center;
+}
+
+.texto_nutrientes{
+    font-size: 20px;
+    color: #3d9915;
+    font-weight: bold;
+}
+
+/*------------------------------------Seccion de Productos-------------------------------------*/
+
+/*Parte superior*/
+
+.tarjeta--productos{
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    height: 720px;
+    padding-top: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.tarjeta__img1--productos{
+    padding: 5px;
+    left: 50px;
+    width: 450px;
+    height: 700px;
+    display: inline-block;
+    position: absolute;
+    /*border: solid 1px black;*/
+}
+
+.tarjeta__img2--productos{
+    padding: 5px;
+    left: 550px;
+    width: 450px;
+    height: 700px;
+    display: inline-block;
+    position: absolute;
+    /*border: solid 1px black;*/
+}
+
+.tarjeta__img3--productos{
+    padding: 5px;
+    right: 50px;
+    width: 450px;
+    height: 700px;
+    display: inline-block;
+    position: absolute;
+    /*border: solid 1px black;*/
+}
+
+/*------------------------------------Seccion de Recetas-------------------------------------*/
+
+.tarjeta--recetas{
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    height: 920px;
+    padding-top: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.tarjeta__img1--recetas{
+    padding: 5px;
+    left: 10px;
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+}
+
+.tarjeta__parrafo1--recetas{
+    padding: 5px;
+    left: 550px;
+    margin-left: 20px;
+    width: 700px;
+    height: 250px;
+    display: inline-block;
+    position: absolute;
+    color: #6c757d;
+}
+
+.text_list{
+    line-height: 30px;
+}
+
+
+/*------------------------------------Seccion de Contacto-------------------------------------*/
+
+.input_box {
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: "Ubuntu-LightItalic";
+    border-width: 1px;
+    border-color: #3d9915;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 8px;
+    width: 394px;
+}
+
+.input_box--email{
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: "Ubuntu-LightItalic";
+    border-width: 1px;
+    border-color: #3d9915;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 8px;
+    width: 320px;
+}
+
+.input_box--phone{
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: "Ubuntu-LightItalic";
+    border-width: 1px;
+    border-color: #3d9915;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 8px;
+    width: 392px;
+}
+
+.input_box--textarea{
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: "Ubuntu-LightItalic";
+    border-width: 1px;
+    border-color: #3d9915;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 8px;
+    width: 462px;
+
+}
+
+.input_radius{
+    padding: 5px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+    color: #6c757d;
+    background: #3d9915;
+    
+}
+
+.text_black{
+    color: black;
+    font-weight: bold;
+}
+
+.text_black--msg{
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+.hover_white:hover{
+    filter: opacity(.5);
+}
+
+.hover_text:hover{
+    filter: opacity(.5);
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a VeggiePasta!</title>
+    <link rel="shortcut icon" href="/assets/icon/icon.png">
+    <!-- <link rel="stylesheet" href="../css/estilos.css">-->
+    <link rel="stylesheet" href="../css/estilos_OLD.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo_header">
+            <img src="/assets/logo/logo.png" alt="VeggiePasta" height="100">
+        </div>
+        <nav class="menu">  
+                <a class="hover_text" href="../index.html">Inicio</a> |
+                <a class="hover_text" href="./historia.html">Historia</a> |
+                <a class="hover_text" href="./productos.html">Productos</a> |
+                <a class="hover_text" href="./recetas.html">Recetas</a>  |
+                <a class="hover_text" href="#">Contacto</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2 class="aviso">!!!! AUN NO MIGRADO A GRID/FLEX !!!!</h2> 
+        <section class="tarjeta--contact">
+            <article>
+                <div class="tarjeta__img1--contact">
+                    <img class="img_side--contact" src="/assets/img/contact_side.png" alt="Imagen una nueva manera de disfrutar tus pastas">
+                </div>
+                <div class="tarjeta__parrafo1--contact">
+                    
+                    <h2>Formulario de contacto</h2>    
+                    <form action="procesar.php" method="post" ></form>
+                    <div class="select_option">
+                        <label class="text_black" for="motivo">Motivo: </label>
+                        <input type="radio" name="motivo" value="consulta">
+                        <label for="motivo">Consulta</label>
+                        <input type="radio" name="motivo" value="reclamo">
+                        <label for="motivo">Reclamo</label>
+                        <input type="radio" name="motivo" value="sugerencia">
+                        <label for="motivo">Sugerencia</label>
+                        
+                    </div>
+                    <br>
+                    <div >
+                        <label class="text_black"  for="Nombre">Nombre: </label>
+                        <input class="input_box" type="text" name="nombre" placeholder="ingresá tu nombre">
+                    </div>
+                    <br>
+                    <div>
+                        <label class="text_black" for="Apellido">Apellido:</label>
+                        <input class="input_box" type="text" name="apellido" placeholder="ingresá tu apellido">
+                    </div>
+                    <br>
+                    <div>
+                        <label class="text_black" for="Email">Correo electrónico:</label>
+                        <input class="input_box--email" type="email" name="email" placeholder="ingresá tu email" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="text_black" for="Telefono">Teléfono:</label>
+                        <input class="input_box--phone" type="tel" name="telefono" placeholder="ingresá tu telefono">
+                    </div>
+                    <br>
+                    <div>  
+                        <label class="text_black--msg" for="Mensaje">Mensaje:</label>
+                        <textarea class="input_box--textarea" placeholder="escribí aquí tu mensaje." name="mensaje" id="" cols="30" rows="10"></textarea>  
+                    </div>
+                    <br>      
+                    <!--Botones-->
+                    <div>
+                        <input class="button_enviar" type="submit" value="Enviar">
+                        <input class="button_reset"type="reset" value="Borrar Formulario">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer_redes">
+            <a href="https://www.instagram.com/veggiepasta"><img class="hover_white" src="../assets/img/instagram.png" alt="Instragram" height="30"></a>
+            <a href="https://www.facebook.com/veggiepasta"><img class="hover_white" src="../assets/img/facebook.png" alt="Facebook" height="30"></a>
+            <a href="https://www.youtube.com/c/veggiepasta"><img class="hover_white" src="../assets/img/youtube.png" alt="YouTube" height="30"></a>
+        </div>
+        <p class="footer_text">
+            Todos Los Derechos Reservados © 2022 VeggiePasta
+        </p>
+    </footer>
+    
+</body>
+</html>
