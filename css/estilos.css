@@ -112,7 +112,6 @@ ol li::marker {
 .header_vp .menu_mobile { 
     grid-area: menu_mobile; 
     display: none;
-    background-color: orange;
     justify-content: space-around;
 }
 
@@ -503,6 +502,8 @@ ol li::marker {
     .header_vp .menu_mobile { 
         display: flex;
         background-color: #c7f9cc;
+        animation-name: fadeInDown;
+        animation-duration: 2s;
         border-radius: 10px;
         align-items: center;
     }
