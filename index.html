@@ -6,122 +6,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenidos a VeggiePasta!</title>
     <link rel="shortcut icon" href="./assets/icon/icon.png">
-    <link rel="stylesheet" href="./css/estilos.css">
     <script src="https://kit.fontawesome.com/b8686e4c69.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
 
     <header>
-        <nav class="header_vp">
+
             <div class="logo">
-                <img  src="./assets/logo/logo.png" alt="VeggiePasta">
+                <img  src="./assets/logo/logo_transparent.png" alt="VeggiePasta">
             </div>           
-            <div class="menu_mobile">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="menu">
-                <div class="menu_text">  
-                    <a class="hover_text" href="#">Inicio</a> |
-                    <a class="hover_text" href="./pages/historia.html">Historia</a> |
-                    <a class="hover_text" href="./pages/productos.html">Productos</a> |
-                    <a class="hover_text" href="./pages/recetas.html">Recetas</a>  |
-                    <a class="hover_text" href="./pages/contacto.html">Contacto</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav justify-content-center navbar-nav mx-auto mb-2 mb-lg-0"> 
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./pages/historia.html">Historia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./pages/productos.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./pages/recetas.html">Recetas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./pages/contacto.html">Contacto</a>
+                                </li>
+                    </ul>
                 </div>
-            </div>
-        </nav>            
+        </div>
+        </nav> 
     </header>
     
-
     <main>
         <section>
-            <article class="body_vp">
-                <div class="seccion_intro">
-                    <div class="imagen_intro">
-                        <img src="./assets/img/side1.png" alt="Imagen una nueva manera de disfrutar tus pastas">
-                    </div>
-                    <div class="texto_intro">
-                        <h2>Una nueva manera de disfrutar tus pastas</h2>    
-                        <p>
-                            VeggiePasta es nuestra jóven marca de pastas para recrear tus mejores platos en tu cocina. VeggiePasta nos invita a explorar nuevos sabores, diferentes métodos de elaboración, y nos anima a probar cosas nuevas.
-                            ¿cuál es la clave? Utilizar los mejores vegetales, 100% seleccionados, de excelente calidad provenientes de distintos rincones de nuestro País. <br> Todo esto, incluye un especializado método de elaboración que le otorga a nuestras pastas un dente firme, logrando una experiencia superadora. Y además, está elaborada con moldes de bronce, que le proporcionan la rugosidad justa.
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="seccion_qsomos">
-                    <div class="texto_qsomos">
-                        <h2>Quienes somos</h2>    
-                        <p>
-                            En el año 1968 Francisco Bonaudi, quien vivía en María de Castellabate, un pueblo de Italia, viajó a Sudamérica buscando nuevas oportunidades. Una vez en Argentina, Bonaudi, que conocía como nadie el sabor de la buena pasta, tuvo la idea de fundar una fábrica de pastas que le permitiera revivir los momentos vividos en Italia. El saber italiano y el trigo argentino, asegurarían un éxito indiscutido.<br>
-                            Desde 2009 ofrecemos en VeggiePasta® alternativa saludable, con el sabor de los mejores vegetales, para disfrutar las mejores pastas en tu mesa. 
-                        </p>
-                    </div>
-                    <div class="imagen_qsomos">
-                        <img src="./assets/img/side2.png" alt="Imagen Quienes Somos">
-                    </div>               
-                </div>
-    
-                <div class="nos_recomiendan">
-                    <h2 >Nos Recomiendan:</h2>
-                </div>
-    
-                <div class="seccion_chefs">
-                    <div class="chef1">
-                        <div class="img_chef1">
-                            <img src="./assets/img/chef1.jpeg" alt="Guillermo Suarez">
+<!--SECCION INTRO BOOTSTRAP-->
+            <section class="container-fluid">
+                <div class="container_body_i">
+                    <div class="row">
+                        <div class="item col-sm-3">
+                            <div class="imagen_intro">
+                                <img class="side1_normal" src="./assets/img/side1_normal.png" alt="Imagen una nueva manera de disfrutar tus pastas">
+                                <img class="side1_small" src="./assets/img/side1_small.png" alt="Imagen una nueva manera de disfrutar tus pastas">
+                            </div>
                         </div>
-                        <div class="img_chef1_small">
-                            <img src="./assets/img/chef1_small.jpeg" alt="Guillermo Suarez">
-                        </div>
-    
-                        <div class="text_chef1">
-                            <h3>Guillermo Suarez</h3> 
-                            <h4>Chef en Gourmet.com</h4>  
-                            <p>
-                                "Comer sano y rico es posible! VeggiePasta aporta los nutrientes de los vegetales sin sacrificar el sabor de una buena pasta."
-                            </p>
-                        </div>
-                    </div>
-                    <div class="chef2">
-                        <div class="img_chef2">
-                            <img src="./assets/img/chef2.png" alt="Alejandro Arias Cortez">
-                        </div>
-                        <div class="img_chef2_small">
-                            <img src="./assets/img/chef2_small.png" alt="Guillermo Suarez">
-                        </div>
-                        <div class="text_chef2">
-                            <h3>Alejandro Arias Cortez </h3>  
-                            <h4>Influencer / Chef</h4>   
-                            <p>
-                                "Grandes platos, insuperable sabor y nutrición. Definitivamente recomiendo probarlas!."
-                            </p>
-                        </div>
-                    </div>
-                    <div class="chef3">
-                        <div class="img_chef3">
-                            <img src="./assets/img/chef3.png" alt="María Altamiranda">
-                        </div>
-                        <div class="img_chef3_small">
-                            <img src="./assets/img/chef3_small.png" alt="Guillermo Suarez">
-                        </div>
-                        <div class="text_chef3">
-                            <h3>María Altamiranda</h3>
-                            <h4>Sous-Chef en Hilton Hotels</h4> 
-                            <p class="tarjeta__cita">
-                                "Cada día más personas eligen una alimentación orientada a productos derivados de vegetales, es un excelente producto!."
-                            </p>
+                        <div class="item col-sm-9">
+                            <div class="texto_intro">
+                                <h2>Una nueva manera de disfrutar tus pastas</h2>    
+                                <p>
+                                    <strong>VeggiePasta®</strong> es nuestra jóven marca de pastas para recrear tus mejores platos en tu cocina. VeggiePasta nos invita a explorar nuevos sabores, diferentes métodos de elaboración, y nos anima a probar cosas nuevas.
+                                    ¿cuál es la clave? Utilizar los mejores vegetales, 100% seleccionados, de excelente calidad provenientes de distintos rincones de nuestro País. <br> Todo esto, incluye un especializado método de elaboración que le otorga a nuestras pastas un dente firme, logrando una experiencia superadora. Y además, está elaborada con moldes de bronce, que le proporcionan la rugosidad justa.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </article>
+                
+            </section>
+<!--SECCION QUIENES SOMOS BOOTSTRAP-->
+
+            <section class="container-fluid">
+                <div class="container_body_qs">
+                    <div class="row">
+                        <div class="item col-sm-9">
+                            <div class="texto_qsomos">
+                                <h2>Quienes somos</h2>    
+                                <p>
+                                    En el año 1968 Francisco Bonaudi, quien vivía en María de Castellabate, un pueblo de Italia, viajó a Sudamérica buscando nuevas oportunidades. Una vez en Argentina, Bonaudi, que conocía como nadie el sabor de la buena pasta, tuvo la idea de fundar una fábrica de pastas que le permitiera revivir los momentos vividos en Italia. El saber italiano y el trigo argentino, asegurarían un éxito indiscutido.<br>
+                                    Desde 2009 ofrecemos en <strong>VeggiePasta®</strong> alternativa saludable, con el sabor de los mejores vegetales, para disfrutar las mejores pastas en tu mesa. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item col-sm-3">
+                            <div class="imagen_qsomos">
+                                <img class="side2_normal" src="./assets/img/side2_normal.png" alt="Imagen Quienes Somos">
+                                <img class="side2_small" src="./assets/img/side2_small.png" alt="Imagen Quienes Somos">
+                            </div>    
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="nos_recomiendan">
+                <h2 >Nos Recomiendan:</h2>
+            </div>
+<!--SECCION CHEFS BOOTSTRAP-->
+            <section class="container-fluid">
+                <div class="container_body">
+                    <div class="row">
+                        <div class="item col-md-2">
+                            <div class="img_chef1">
+                                <img src="./assets/img/chef1.jpeg" alt="Guillermo Suarez">
+                            </div>
+                            <div class="text-center text-sm-start">
+                                <div class="img_chef1_small">
+                                    <img src="./assets/img/chef1_small.jpeg" alt="Guillermo Suarez">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item col-md-2">
+                            <div class="text-center text-sm-start">
+                                <div class="text_chef1">
+                                    <h3>Guillermo Suarez</h3> 
+                                    <h4>Chef en Gourmet.com</h4>  
+                                    <p>
+                                        "Comer sano y rico es posible! VeggiePasta aporta los nutrientes de los vegetales sin sacrificar el sabor de una buena pasta."
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item col-md-2">
+                            <div class="img_chef2">
+                                <img src="./assets/img/chef2.png" alt="Alejandro Arias Cortez">
+                            </div>
+                            <div class="text-center text-sm-start">
+                                <div class="img_chef2_small">
+                                    <img src="./assets/img/chef2_small.png" alt="Alejandro Arias Cortez">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item col-md-2">
+                            <div class="text-center text-sm-start">
+                                <div class="text_chef2">
+                                    <h3>Alejandro Arias Cortez </h3>  
+                                    <h4>Influencer / Chef</h4>   
+                                    <p>
+                                        "Grandes platos, insuperable sabor y nutrición. Definitivamente recomiendo probarlas!."
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="item col-md-2">
+                            <div class="img_chef3">
+                                <img src="./assets/img/chef3.png" alt="María Altamiranda">
+                            </div>
+
+                            <div class="text-center text-sm-start">
+                                <div class="img_chef3_small">
+                                    <img src="./assets/img/chef3_small.png" alt="María Altamiranda">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item col-md-2">
+                            <div class="text-center text-sm-start">
+                                <div class="text_chef3">
+                                    <h3>María Altamiranda</h3>
+                                    <h4>Sous-Chef en Hilton Hotels</h4> 
+                                    <p class="tarjeta__cita">
+                                        "Cada día más personas eligen una alimentación orientada a productos derivados de vegetales, es un excelente producto!."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
         
     </main>
 
 
     <footer>
-        <div class="fotter_vp">
+        <div class="footer_vp">
             <div class="redes">
                 <div class="imagenes">
                     <a href="https://www.instagram.com/veggiepasta"><img class="hover_white" src="./assets/img/instagram.png" alt="Instragram" height="30"></a>
@@ -135,6 +200,6 @@
             </div>
         </div>
     </footer>
-
+    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
