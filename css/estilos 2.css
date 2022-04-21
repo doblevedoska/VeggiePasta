@@ -1,0 +1,904 @@
+/*############################################################################# CSS APLICABLES A TODO EL SITIO #############################################################################*/
+
+@font-face{
+    font-family: "Ubuntu-Regular";
+    src: url('../assets/font/Ubuntu-Regular.ttf');
+}
+
+@font-face{
+    font-family: "Ubuntu-Medium";
+    src: url('../assets/font/Ubuntu-Medium.ttf');
+}
+
+@font-face{
+    font-family: "Ubuntu-LightItalic";
+    src: url('../assets/font/Ubuntu-LightItalic.ttf');
+}
+
+body{
+    /*background-image: url(../assets/background/rename.webp);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Ubuntu-Regular";
+}
+
+p{
+    /*color: #3d9915;*/
+    line-height: 2;
+    font-weight: 200;
+    /* font-size: 1.1vw; */
+    color: #6c757d;
+}
+
+p strong{
+    font-weight: 600;
+    
+}
+
+h2{
+    color: #3d9915;
+
+}
+
+h3{
+    color: #3d9915;
+}
+
+h4{
+    color: #3d9915;
+}
+
+h5{
+    color: #6c757d; 
+}
+
+
+.nav-link{
+    color: #6c757d;
+}
+
+.nav-link:hover{
+    /*filter: opacity(.5);*/
+    color: #f78f19;
+}
+
+.aviso{
+    color:red;
+}
+
+.text_black{
+    color: #6c757d;
+}
+
+/*--------------------------------------------GRID HEADER--------------------------------------------------*/
+
+
+.logo { 
+    grid-area: logo; 
+    display: flex;
+    /*background-color: yellow;*/
+    justify-content: space-around;
+    height: 100px;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*NAVBAR CON BOOTSTRAP*/
+
+.navbar{
+    /*background-color: #c7f9cc;*/
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 20%, #dbfbde 100%);
+    border-radius: 10px;
+}
+
+/*--------------------------------------------GRID FOOTER--------------------------------------------------*/
+
+.footer_vp {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-template-areas:
+    "redes"
+    "copyright";
+}
+
+.redes { 
+    grid-area: redes; 
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #c7f9cc;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.redes .imagenes{ 
+    display: flex;
+    justify-content: space-around;   
+    width: 120px;
+    text-align: center;
+}
+
+.copyright { 
+    grid-area: copyright; 
+    display: flex;
+    /*background-color: greenyellow;*/
+    justify-content: space-around;
+}
+
+/*-------------------------------------------HOVER & ANIMACIONES--------------------------------------------------*/
+
+.hover_white:hover{
+    filter: opacity(.5);
+}
+
+.hover_text:hover{
+    /*filter: opacity(.5);*/
+    color: #3d9915;
+}
+
+
+/*############################################################################# BODY INDEX #############################################################################*/
+
+/*SECCION INTRO*/
+
+.container-fluid{
+    margin-top: 20px;
+}
+
+.container_body_i{
+    border: solid 1px #cccccc;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, #dbfbde 100%);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.imagen_intro { 
+    padding: 10px 10px 0px 10px;
+}
+
+.imagen_intro .side1_normal{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.imagen_intro .side1_small{
+    display: none;
+    border-radius: 10px;
+}
+
+.texto_intro { 
+    padding: 10px 20px 10px 10px;
+}
+
+
+/*SECCION QUIENES SOMOS*/
+
+.container_body_qs{
+    border: solid 1px #cccccc;
+    background: linear-gradient(90deg, #dbfbde 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.texto_qsomos { 
+    padding: 10px 10px 10px 20px;
+}
+
+.imagen_qsomos { 
+    padding: 10px;
+}
+
+.imagen_qsomos .side2_normal{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.imagen_qsomos .side2_small{
+    display: none;
+    border-radius: 10px;
+}
+
+/*NOS RECOMIENDAN*/
+
+.nos_recomiendan { 
+    text-align: center;
+    border-bottom: 10px;
+}
+
+/*SECCION CHEFS*/
+
+.img_chef1{    
+    /*background-color: #1aa7a4;*/
+    align-self: flex-end;
+}
+.img_chef1 img{
+    height: 260px;
+}
+
+.img_chef1_small{
+    display: none;
+}
+
+
+/* .text_chef1{
+    padding-left: 10px;
+} */
+
+.text_chef1 p{
+    font-style: italic;
+}
+
+.img_chef2{
+    /*background-color: #1aa7a4;*/
+    align-self: flex-end;
+}
+
+.img_chef2 img{
+    height: 260px;
+}
+
+.img_chef2_small{
+    display: none;
+}
+
+/* .text_chef2{
+    padding-left: 10px;
+} */
+
+.text_chef2 p{
+    font-size: 90%;
+    font-style: italic;
+}
+
+.img_chef3{
+    align-self: flex-end;
+}
+
+.img_chef3 img{
+    height: 260px;
+}
+
+.img_chef3_small{
+    display: none;
+}
+/* .text_chef3{
+    padding-left: 10px;
+} */
+
+.text_chef3 p{
+    font-size: 90%;
+    font-style: italic;
+}
+
+
+
+
+/*############################################################################# BODY RECETAS #############################################################################*/
+
+
+
+.foto_receta { 
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foto_receta img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.video_receta { 
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.video_receta iframe{
+    width: 100%; 
+    border-radius: 10px;
+}
+
+
+.instrucciones_receta { 
+    padding: 10px;
+}
+
+.instrucciones_receta .icon_text {
+    line-height: 2;
+}
+.instrucciones_receta .icon_text i{
+    display: inline;
+    color: #f78f19;
+}
+
+.instrucciones_receta .icon_text h3{
+    display: inline;
+}
+
+.instrucciones_receta .icon_text2 i{
+    display: inline;
+    color: #f78f19;
+}
+
+.instrucciones_receta .icon_text2 h3{
+    display: inline;
+}
+
+.instrucciones_receta h2{
+    text-align: left;
+    color: #3d9915;
+    font-weight: bold;
+    /* font-size: 1.8vw; */
+}
+
+.instrucciones_receta h3{
+    color: #6c757d;
+    /* font-size: 1.4vw; */
+    text-align: left;
+}
+
+.instrucciones_receta h4{
+    color: #6c757d;
+    /* font-size: 1.1vw; */
+    font-weight: bold;
+
+}
+
+.instrucciones_receta ul{
+    line-height: 2;
+    /* font-size: 1.1vw; */
+    color: #6c757d;
+    list-style: none;
+}
+
+.instrucciones_receta ul li::before {
+    content: "\2022";  
+    color: #f78f19; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+.instrucciones_receta ol{
+    line-height: 2;
+    /* font-size: 1.1vw; */
+    color: #6c757d;
+}
+
+.instrucciones_receta ol li::marker {
+    color: #f78f19;
+}
+
+/*############################################################################# BODY PRODUCTOS #############################################################################*/
+
+.titulo_prod { 
+    margin-top: 10px;
+    text-align: center;
+    border-bottom: 10px;
+}
+
+/*SECCION PROD1*/
+
+.img_prod1{    
+    align-self: flex-end;
+}
+.img_prod1 img{
+    height: 280px;
+}
+
+.text_prod1{
+    padding-left: 10px;
+}
+
+.text_prod1 h3{
+    color:#f78f19;
+}
+
+.text_prod1 hr { 
+    display: none;
+}
+
+.text_prod1 ul{
+    line-height: 2;
+    color: #6c757d;
+    list-style: none;
+}
+
+.text_prod1 ul li::before {
+    content: "\2022";  
+    color: #f78f19; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+/*SECCION PROD2*/
+
+.img_prod2{    
+    align-self: flex-end;
+}
+.img_prod2 img{
+    height: 280px;
+}
+
+.text_prod2{
+    padding-left: 10px;
+}
+
+.text_prod2 h3{
+    color:#f78f19;
+}
+
+.text_prod2 hr { 
+    display: none;
+}
+
+.text_prod2 ul{
+    line-height: 2;
+    color: #6c757d;
+    list-style: none;
+}
+
+.text_prod2 ul li::before {
+    content: "\2022";  
+    color: #f78f19; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+/*SECCION PROD3*/
+
+.img_prod3{    
+    align-self: flex-end;
+}
+.img_prod3 img{
+    height: 280px;
+}
+
+.text_prod3{
+    padding-left: 10px;
+}
+
+.text_prod3 h3{
+    color:#f78f19;
+}
+
+.text_prod3 hr { 
+    display: none;
+}
+
+.text_prod3 ul{
+    line-height: 2;
+    color: #6c757d;
+    list-style: none;
+}
+
+.text_prod3 ul li::before {
+    content: "\2022";  
+    color: #f78f19; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+/*############################################################################# BODY CONTACTO #############################################################################*/
+
+.item_contacto{
+    padding: 10px;
+}
+
+.img_side--contact{
+    height: 300px;
+    border-radius: 10px;
+    filter: grayscale(100) opacity(.6);
+}
+
+.form-control:focus {
+    border-color: #cccccc;
+    box-shadow: 0 0 0 0.2rem #c7f9cc;;
+} 
+
+
+/*############################################################################# BODY HISTORIA #############################################################################*/
+
+.img_side--historia{
+    width: 345px;
+    border-radius: 10px;
+}
+
+.img_size--hist_2{
+    height: 150px;
+}
+
+.img_size--hist_2--logo{
+    height: 50px;
+}
+
+.img_size--hist_2--otros{
+    height: 50px;
+}
+
+.separador{
+    padding-top: 50px;
+}
+
+.separador h4{
+    color: #3d9915;
+}
+
+/*############################################################################# MEDIA QUERIES #############################################################################*/
+
+/*----------------------- ENTRE 320 Y 575 PX -----------------------*/
+
+@media (min-width: 320px) and (max-width: 575px){
+
+.logo { 
+    height: 60px;
+}
+
+.imagen_intro .side1_normal{
+    display: none;
+}
+
+.imagen_intro .side1_small{
+    display: inline-block;
+    width: 99%;
+}
+
+.imagen_qsomos .side2_normal{
+    display: none;
+}
+
+.imagen_qsomos .side2_small{
+    display: inline-block;
+    width: 99%;
+}
+
+
+.img_chef1{
+        display: none; 
+    }
+.img_chef1_small{
+        display: inline-block;
+        margin: auto;
+    }
+.img_chef1_small img{
+        width: 100px;
+        border: 1px solid #cccccc;
+        border-radius: 50px;
+    }
+
+    /*CHEF2*/
+.img_chef2{
+        display: none; 
+    }
+
+.img_chef2_small{
+        display: inline-block;
+        margin: auto;
+    }
+
+.img_chef2_small img{
+        width: 100px;
+        border: 1px solid #cccccc;
+        border-radius: 50px;
+    }
+
+    /*CHEF3*/
+
+
+.img_chef3{
+        display: none; 
+    }
+
+.img_chef3_small{
+        display: inline-block;
+        margin: auto;
+    }
+
+.img_chef3_small img{
+        width: 100px;
+        border: 1px solid #cccccc;
+        border-radius: 50px;
+    }
+
+    /*RECETAS*/
+
+    .body_recetas{
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    
+    /* .instrucciones_receta h2{
+        font-size: 3.4vw;
+    }
+    
+    .instrucciones_receta h3{
+        font-size: 3.2vw;
+    }
+
+    .video_receta h3{
+        font-size: 3.2vw;
+    }
+    
+    /* .instrucciones_receta h4{
+        font-size: 3vw;  
+    }
+
+    .instrucciones_receta ul{
+        font-size: 2.8vw;
+    }
+
+    .instrucciones_receta ol{
+        font-size: 2.8vw;
+    } */ */
+
+    .text_prod1 hr { 
+        display: inline-block;
+        width:100%; 
+        height:1px; 
+        background: #3d9915 
+    }
+
+    .text_prod2 hr { 
+        display: inline-block;
+        width:100%; 
+        height:1px; 
+        background: #3d9915 
+    }
+
+    .text_prod3 hr { 
+        display: inline-block;
+        width:100%; 
+        height:1px; 
+        background: #3d9915 
+    }
+
+    .img_side--historia{
+        width: 360px;
+    }
+
+    .texto_nutrientes{
+        font-size: 2.2vw;
+    }
+    
+    .separador h4{
+        font-size: 2.2vw;
+    }
+    
+    .separador{
+        padding-top: 25px;
+    }
+    
+    .img_size--hist_2{
+        height: 80px;
+    }
+    
+    .img_size--hist_2--logo{
+        height: 25px;
+    }
+    
+    .img_size--hist_2--otros{
+        height: 25px;
+    }
+    
+
+
+}
+
+/*----------------------- BOOTSTRAP MD - ENTRE 576 Y 768 PX -----------------------*/
+
+
+@media (min-width: 576px) and (max-width: 768px){
+
+.logo { 
+    height: 70px;
+}
+
+
+.img_chef1{
+    display: none; 
+}
+
+.img_chef1_small {
+    display: inline-block;
+}
+
+.img_chef1_small img{
+    width: 150px;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+}
+
+.img_chef2{
+    display: none; 
+}
+
+.img_chef2_small {
+    display: inline-block;
+}
+
+.img_chef2_small img{
+    width: 150px;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+}
+
+.img_chef3{
+    display: none; 
+}
+
+.img_chef3_small {
+    display: inline-block;
+}
+
+.img_chef3_small img{
+    width: 150px;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+}
+
+.text_prod1 hr { 
+    display: inline-block;
+    width:100%; 
+    height:1px; 
+    background: #3d9915 
+}
+
+.text_prod2 hr { 
+    display: inline-block;
+    width:100%; 
+    height:1px; 
+    background: #3d9915 
+}
+
+.text_prod3 hr { 
+    display: inline-block;
+    width:100%; 
+    height:1px; 
+    background: #3d9915 
+}
+
+.img_side--contact{
+    height: 150px;
+}
+
+.img_side--historia{
+    width: 200px;
+}
+
+.texto_nutrientes{
+    font-size: 3vw;
+}
+
+.separador h4{
+    font-size: 3vw;
+}
+
+.separador{
+    padding-top: 30px;
+}
+
+.img_size--hist_2{
+    height: 100px;
+}
+
+.img_size--hist_2--logo{
+    height: 30px;
+}
+
+.img_size--hist_2--otros{
+    height: 30px;
+}
+
+}
+/*----------------------- BOOTSTRAP LG - ENTRE 769 Y 992 PX -----------------------*/
+
+
+@media (min-width: 769px) and (max-width: 992px){
+
+    .img_chef1 img{
+        height: 180px;
+    }
+    
+    .img_chef2 img{
+        height: 180px;
+    }
+    
+    .img_chef3 img{
+        height: 180px;
+    }
+    /* .text_chef1 h3{
+        font-size: 2vw;
+    }
+    .text_chef1 h4{
+        font-size: 90%;
+    }
+
+    .text_chef1 p{
+        font-size: 80%;
+    }
+
+    .text_chef2 h3{
+        font-size: 2vw;
+    }
+
+    .text_chef2 h4{
+        font-size: 90%;
+    }
+
+    .text_chef2 p{
+        font-size: 80%;
+    }
+
+    .text_chef3 h3{
+        font-size: 2vw;
+    }
+
+    .text_chef3 h4{
+        font-size: 90%;
+    }
+
+    .text_chef3 p{
+        font-size: 80%;
+    } */
+
+    .text_prod1 hr { 
+        display: inline-block;
+        width:100%; 
+        height:1px; 
+        background: #3d9915 
+    }
+
+    .text_prod2 hr { 
+        display: inline-block;
+        width:100%; 
+        height:1px; 
+        background: #3d9915 
+    }
+
+    .text_prod3 hr { 
+        display: inline-block;
+        width:100%; 
+        height:1px; 
+        background: #3d9915 
+    }
+
+    .img_side--contact{
+        height: 220px;
+    }
+
+    .img_side--historia{
+        width: 260px;
+    }
+    
+
+}
