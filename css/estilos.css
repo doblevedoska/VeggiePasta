@@ -42,11 +42,14 @@ h2{
 
 h3{
     color: #3d9915;
-
 }
 
 h4{
-    color: #6c757d;
+    color: #3d9915;
+}
+
+h5{
+    color: #6c757d; 
 }
 
 
@@ -236,16 +239,7 @@ h4{
     padding-left: 10px;
 }
 
-.text_chef1 h3{
-    font-size: 2.2vw;
-}
-
-.text_chef1 h4{
-    font-size: 90%;
-}
-
 .text_chef1 p{
-    font-size: 90%;
     font-style: italic;
 }
 
@@ -266,14 +260,6 @@ h4{
     padding-left: 10px;
 }
 
-.text_chef2 h3{
-    font-size: 2.2vw;
-}
-
-.text_chef2 h4{
-    font-size: 90%;
-}
-
 .text_chef2 p{
     font-size: 90%;
     font-style: italic;
@@ -292,14 +278,6 @@ h4{
 }
 .text_chef3{
     padding-left: 10px;
-}
-
-.text_chef3 h3{
-    font-size: 2.2vw;
-}
-
-.text_chef3 h4{
-    font-size: 90%;
 }
 
 .text_chef3 p{
@@ -371,25 +349,25 @@ h4{
     text-align: left;
     color: #3d9915;
     font-weight: bold;
-    font-size: 1.8vw;
+    /* font-size: 1.8vw; */
 }
 
 .instrucciones_receta h3{
     color: #6c757d;
-    font-size: 1.4vw;
+    /* font-size: 1.4vw; */
     text-align: left;
 }
 
 .instrucciones_receta h4{
     color: #6c757d;
-    font-size: 1.1vw;
+    /* font-size: 1.1vw; */
     font-weight: bold;
 
 }
 
 .instrucciones_receta ul{
     line-height: 2;
-    font-size: 1.1vw;
+    /* font-size: 1.1vw; */
     color: #6c757d;
     list-style: none;
 }
@@ -405,7 +383,7 @@ h4{
 
 .instrucciones_receta ol{
     line-height: 2;
-    font-size: 1.1vw;
+    /* font-size: 1.1vw; */
     color: #6c757d;
 }
 
@@ -652,7 +630,7 @@ h4{
     }
 
     
-    .instrucciones_receta h2{
+    /* .instrucciones_receta h2{
         font-size: 3.4vw;
     }
     
@@ -664,7 +642,7 @@ h4{
         font-size: 3.2vw;
     }
     
-    .instrucciones_receta h4{
+    /* .instrucciones_receta h4{
         font-size: 3vw;  
     }
 
@@ -674,7 +652,7 @@ h4{
 
     .instrucciones_receta ol{
         font-size: 2.8vw;
-    }
+    } */ */
 
     .text_prod1 hr { 
         display: inline-block;
