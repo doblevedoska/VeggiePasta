@@ -227,7 +227,7 @@ h5{
     align-self: flex-end;
 }
 .img_chef1 img{
-    height: 280px;
+    height: 260px;
 }
 
 .img_chef1_small{
@@ -235,9 +235,9 @@ h5{
 }
 
 
-.text_chef1{
+/* .text_chef1{
     padding-left: 10px;
-}
+} */
 
 .text_chef1 p{
     font-style: italic;
@@ -249,16 +249,16 @@ h5{
 }
 
 .img_chef2 img{
-    height: 280px;
+    height: 260px;
 }
 
 .img_chef2_small{
     display: none;
 }
 
-.text_chef2{
+/* .text_chef2{
     padding-left: 10px;
-}
+} */
 
 .text_chef2 p{
     font-size: 90%;
@@ -270,15 +270,15 @@ h5{
 }
 
 .img_chef3 img{
-    height: 280px;
+    height: 260px;
 }
 
 .img_chef3_small{
     display: none;
 }
-.text_chef3{
+/* .text_chef3{
     padding-left: 10px;
-}
+} */
 
 .text_chef3 p{
     font-size: 90%;
@@ -509,8 +509,8 @@ h5{
 
 /*############################################################################# BODY CONTACTO #############################################################################*/
 
-.item{
-    padding-left: 20px;
+.item_contacto{
+    padding: 10px;
 }
 
 .img_side--contact{
@@ -829,7 +829,7 @@ h5{
     .img_chef3 img{
         height: 180px;
     }
-    .text_chef1 h3{
+    /* .text_chef1 h3{
         font-size: 2vw;
     }
     .text_chef1 h4{
@@ -862,7 +862,7 @@ h5{
 
     .text_chef3 p{
         font-size: 80%;
-    }
+    } */
 
     .text_prod1 hr { 
         display: inline-block;
