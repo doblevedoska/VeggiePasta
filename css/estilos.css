@@ -47,8 +47,6 @@ h3{
 
 h4{
     color: #6c757d;
-    font-size: 99%;
-    font-weight: 900;
 }
 
 
@@ -63,6 +61,10 @@ h4{
 
 .aviso{
     color:red;
+}
+
+.text_black{
+    color: #6c757d;
 }
 
 /*--------------------------------------------GRID HEADER--------------------------------------------------*/
@@ -527,7 +529,43 @@ h4{
     margin-left: -1em; 
 }
 
+/*############################################################################# BODY CONTACTO #############################################################################*/
 
+.item{
+    padding-left: 20px;
+}
+
+.img_side--contact{
+    height: 300px;
+    border-radius: 10px;
+    filter: grayscale(100) opacity(.6);
+}
+/*############################################################################# BODY HISTORIA #############################################################################*/
+
+.img_side--historia{
+    width: 345px;
+    border-radius: 10px;
+}
+
+.img_size--hist_2{
+    height: 150px;
+}
+
+.img_size--hist_2--logo{
+    height: 50px;
+}
+
+.img_size--hist_2--otros{
+    height: 50px;
+}
+
+.separador{
+    padding-top: 50px;
+}
+
+.separador h4{
+    color: #3d9915;
+}
 
 /*############################################################################# MEDIA QUERIES #############################################################################*/
 
@@ -659,6 +697,35 @@ h4{
         background: #3d9915 
     }
 
+    .img_side--historia{
+        width: 360px;
+    }
+
+    .texto_nutrientes{
+        font-size: 2.2vw;
+    }
+    
+    .separador h4{
+        font-size: 2.2vw;
+    }
+    
+    .separador{
+        padding-top: 25px;
+    }
+    
+    .img_size--hist_2{
+        height: 80px;
+    }
+    
+    .img_size--hist_2--logo{
+        height: 25px;
+    }
+    
+    .img_size--hist_2--otros{
+        height: 25px;
+    }
+    
+
 
 }
 
@@ -735,6 +802,38 @@ h4{
     background: #3d9915 
 }
 
+.img_side--contact{
+    height: 150px;
+}
+
+.img_side--historia{
+    width: 200px;
+}
+
+.texto_nutrientes{
+    font-size: 3vw;
+}
+
+.separador h4{
+    font-size: 3vw;
+}
+
+.separador{
+    padding-top: 30px;
+}
+
+.img_size--hist_2{
+    height: 100px;
+}
+
+.img_size--hist_2--logo{
+    height: 30px;
+}
+
+.img_size--hist_2--otros{
+    height: 30px;
+}
+
 }
 /*----------------------- BOOTSTRAP LG - ENTRE 769 Y 992 PX -----------------------*/
 
@@ -807,5 +906,14 @@ h4{
         height:1px; 
         background: #3d9915 
     }
+
+    .img_side--contact{
+        height: 220px;
+    }
+
+    .img_side--historia{
+        width: 260px;
+    }
+    
 
 }

@@ -49,62 +49,68 @@
 </header>
     
     <main>
-        <h2 class="aviso">!!!! AUN NO MIGRADO A BOOTSTRAP / GRID !!!!!</h2> 
-        <section class="tarjeta--contact">
-            <article>
-                <div class="tarjeta__img1--contact">
-                    <img class="img_side--contact" src="../assets/img/contact_side.png" alt="Imagen una nueva manera de disfrutar tus pastas">
-                </div>
-                <div class="tarjeta__parrafo1--contact">
-                    
-                    <h2>Formulario de contacto</h2>    
-                    <form action="procesar.php" method="post" ></form>
-                    <div class="select_option">
-                        <label class="text_black" for="motivo">Motivo: </label>
-                        <input type="radio" name="motivo" value="consulta">
-                        <label for="motivo">Consulta</label>
-                        <input type="radio" name="motivo" value="reclamo">
-                        <label for="motivo">Reclamo</label>
-                        <input type="radio" name="motivo" value="sugerencia">
-                        <label for="motivo">Sugerencia</label>
-                        
-                    </div>
-                    <br>
-                    <div >
-                        <label class="text_black"  for="Nombre">Nombre: </label>
-                        <input class="input_box" type="text" name="nombre" placeholder="ingresá tu nombre">
-                    </div>
-                    <br>
-                    <div>
-                        <label class="text_black" for="Apellido">Apellido:</label>
-                        <input class="input_box" type="text" name="apellido" placeholder="ingresá tu apellido">
-                    </div>
-                    <br>
-                    <div>
-                        <label class="text_black" for="Email">Correo electrónico:</label>
-                        <input class="input_box--email" type="email" name="email" placeholder="ingresá tu email" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label class="text_black" for="Telefono">Teléfono:</label>
-                        <input class="input_box--phone" type="tel" name="telefono" placeholder="ingresá tu telefono">
-                    </div>
-                    <br>
-                    <div>  
-                        <label class="text_black--msg" for="Mensaje">Mensaje:</label>
-                        <textarea class="input_box--textarea" placeholder="escribí aquí tu mensaje." name="mensaje" id="" cols="30" rows="10"></textarea>  
-                    </div>
-                    <br>      
-                    <!--Botones-->
-                    <div>
-                        <input class="button_enviar" type="submit" value="Enviar">
-                        <input class="button_reset"type="reset" value="Borrar Formulario">
-                    </div>
-                </div>
-            </article>
-        </section>
 
-    </main>
+        <!--SECCION CONTACTO CON BOOTSTRAP -->
+        <section class="container-fluid">
+            <div class="container_body_i">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="text-center">
+                            <img class="img_side--contact" src="../assets/img/contact_side.png" alt="Imagen una nueva manera de disfrutar tus pastas">
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="item col-sm-12">
+                            <div class="mb-3 col-sm-4">
+                                <label for="exampleFormControlInput1" class="form-label">Motivo:</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                Consulta
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                Reclamo
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                Sugerencia
+                                </label>
+                            </div>
+                            <div class="mb-3 col-md-10">
+                                <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+                                <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Juan">
+                            </div>
+                            <div class="mb-3 col-md-10">
+                                <label for="exampleFormControlInput1" class="form-label">Apellido:</label>
+                                <input type="apellido" class="form-control" id="exampleFormControlInput1" placeholder="Pérez">
+                            </div>
+                            <div class="mb-3 col-md-10">
+                                <label for="exampleFormControlInput1" class="form-label">Correo electrónico:</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="jperez@email.com">
+                            </div>
+                            <div class="mb-3 col-md-10">
+                                <label for="exampleFormControlInput1" class="form-label">Teléfono:</label>
+                                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="11 3456 7890">
+                            </div>
+                            <div class="mb-3 col-md-10">
+                                <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribí aquí tu mensaje para nosotros y te responderemos a la brevedad"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary">Enviar</button>
+                            <button type="button" class="btn btn-secondary">Limpiar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
 
     <!-- Footer -->
     <footer>
