@@ -1,0 +1,48 @@
+$gradient-up: linear-gradient(180deg, #dbfbde 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%);
+
+
+
+/*--------------------------------------------GRID FOOTER--------------------------------------------------*/
+
+.footer_vp {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-template-areas:
+    "redes"
+    "copyright";
+
+    .redes { 
+        grid-area: redes; 
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: $gradient-up;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+
+        .imagenes{ 
+            display: flex;
+            justify-content: space-around;   
+            width: 120px;
+            text-align: center;
+
+            .hover_white{
+                &:hover{
+                    filter: opacity(.5);
+                }               
+            }
+        }       
+    }
+
+    .copyright { 
+        grid-area: copyright; 
+        display: flex;
+        /*background-color: greenyellow;*/
+        justify-content: space-around;
+    }
+}

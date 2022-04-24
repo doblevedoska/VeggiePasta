@@ -1,0 +1,120 @@
+//Variables
+$color-principal: #3d9915;
+$color-secundario: #6c757d;
+$color-pop: #f78f19;
+$border: solid 1px #cccccc;
+
+/*----------------------- BOOTSTRAP MD - ENTRE 576 Y 768 PX -----------------------*/
+
+
+@media (min-width: 576px) and (max-width: 768px){
+
+    .logo { 
+        display: none;
+    }
+    
+    .logo_mobile {
+        display: inline-block;
+    }
+    
+    .logo_mobile img{
+        height: 50px;
+    }
+    
+    
+    .img_chef1{
+        display: none; 
+    }
+    
+    .img_chef1_small {
+        display: inline-block;
+    }
+    
+    .img_chef1_small img{
+        width: 150px;
+        border: $border;
+        border-radius: 15px;
+    }
+    
+    .img_chef2{
+        display: none; 
+    }
+    
+    .img_chef2_small {
+        display: inline-block;
+    }
+    
+    .img_chef2_small img{
+        width: 150px;
+        border: $border;
+        border-radius: 15px;
+    }
+    
+    .img_chef3{
+        display: none; 
+    }
+    
+    .img_chef3_small {
+        display: inline-block;
+    }
+    
+    .img_chef3_small img{
+        width: 150px;
+        border: $border;
+        border-radius: 15px;
+    }
+    
+    .text_prod1 hr { 
+        display: inline-block;
+        width:100%; 
+        height:1px; 
+        background: $color-principal;
+    }
+    
+    .text_prod2 hr { 
+        display: inline-block;
+        width:100%; 
+        height:1px; 
+        background: $color-principal;
+    }
+    
+    .text_prod3 hr { 
+        display: inline-block;
+        width:100%; 
+        height:1px; 
+        background: $color-principal; 
+    }
+    
+    .img_side--contact{
+        height: 150px;
+    }
+    
+    .img_side--historia{
+        width: 500px;
+    }
+    
+    .texto_nutrientes{
+        font-size: 3vw;
+    }
+    
+    .separador h4{
+        font-size: 3vw;
+    }
+    
+    .separador{
+        padding-top: 30px;
+    }
+    
+    .img_size--hist_2{
+        height: 100px;
+    }
+    
+    .img_size--hist_2--logo{
+        height: 30px;
+    }
+    
+    .img_size--hist_2--otros{
+        height: 30px;
+    }
+    
+    }

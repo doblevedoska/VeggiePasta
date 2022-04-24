@@ -1,0 +1,20 @@
+//Variables
+$border-input: #cccccc;
+$glow-input: #c7f9cc;
+
+/*############################################################################# BODY CONTACTO #############################################################################*/
+
+.item_contacto{
+    padding: 10px;
+}
+
+.img_side--contact{
+    height: 300px;
+    border-radius: 10px;
+    filter: grayscale(100) opacity(.6);
+}
+
+.form-control:focus {
+    border-color: $border-input;
+    box-shadow: 0 0 0 0.2rem $glow-input;
+} 

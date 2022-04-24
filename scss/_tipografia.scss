@@ -1,0 +1,45 @@
+@font-face{
+    font-family: "Ubuntu-Regular";
+    src: url('../assets/font/Ubuntu-Regular.ttf');
+}
+
+$color-principal: #3d9915;
+$color-secundario: #6c757d;
+$fuente: "Ubuntu-Regular";
+
+body{
+    /*background-image: url(../assets/background/rename.webp);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $fuente;
+}
+
+p{
+    /*color: #3d9915;*/
+    line-height: 2;
+    font-weight: 200;
+    /* font-size: 1.1vw; */
+    color: $color-secundario;
+}
+
+p strong{
+    font-weight: 600;
+    
+}
+
+h2{
+    color: $color-principal;
+
+}
+
+h3{
+    color: $color-principal;
+}
+
+h4{
+    color: $color-principal;
+}
+
+h5{
+    color: $color-secundario; 
+}

@@ -1,16 +1,8 @@
 @charset "UTF-8";
-/*############################################################################# CSS APLICABLES A TODO EL SITIO #############################################################################*/
+/*IMPORT*/
 @font-face {
   font-family: "Ubuntu-Regular";
   src: url("../assets/font/Ubuntu-Regular.ttf");
-}
-@font-face {
-  font-family: "Ubuntu-Medium";
-  src: url("../assets/font/Ubuntu-Medium.ttf");
-}
-@font-face {
-  font-family: "Ubuntu-LightItalic";
-  src: url("../assets/font/Ubuntu-LightItalic.ttf");
 }
 body {
   /*background-image: url(../assets/background/rename.webp);*/
@@ -47,28 +39,11 @@ h5 {
   color: #6c757d;
 }
 
-.nav-link {
-  color: #6c757d;
-}
-
-.nav-link:hover {
-  /*filter: opacity(.5);*/
-  color: #f78f19;
-}
-
-.aviso {
-  color: red;
-}
-
-.text_black {
-  color: #6c757d;
-}
-
+/*############################################################################# HEADER & FOOTER #############################################################################*/
 /*--------------------------------------------GRID HEADER--------------------------------------------------*/
 .logo {
   grid-area: logo;
   display: flex;
-  /*background-color: yellow;*/
   justify-content: space-around;
   height: 100px;
   animation-name: fadeInDown;
@@ -76,6 +51,10 @@ h5 {
   text-align: center;
   margin-top: 10px;
   padding-bottom: 10px;
+}
+
+.logo_mobile {
+  display: none;
 }
 
 /*NAVBAR CON BOOTSTRAP*/
@@ -95,42 +74,33 @@ h5 {
   justify-content: center;
   grid-template-areas: "redes" "copyright";
 }
-
-.redes {
+.footer_vp .redes {
   grid-area: redes;
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #c7f9cc;
+  background: linear-gradient(180deg, #dbfbde 0%, rgb(255, 255, 255) 80%, rgb(255, 255, 255) 100%);
   border-radius: 10px;
   align-items: center;
   justify-content: center;
 }
-
-.redes .imagenes {
+.footer_vp .redes .imagenes {
   display: flex;
   justify-content: space-around;
   width: 120px;
   text-align: center;
 }
-
-.copyright {
+.footer_vp .redes .imagenes .hover_white:hover {
+  filter: opacity(0.5);
+}
+.footer_vp .copyright {
   grid-area: copyright;
   display: flex;
   /*background-color: greenyellow;*/
   justify-content: space-around;
 }
 
-/*-------------------------------------------HOVER & ANIMACIONES--------------------------------------------------*/
-.hover_white:hover {
-  filter: opacity(0.5);
-}
-
-.hover_text:hover {
-  /*filter: opacity(.5);*/
-  color: #3d9915;
-}
-
+/*############################################################################# BODIES #############################################################################*/
 /*############################################################################# BODY INDEX #############################################################################*/
 /*SECCION INTRO*/
 .container-fluid {
@@ -261,12 +231,19 @@ h5 {
 }
 
 /*############################################################################# BODY RECETAS #############################################################################*/
+.nav-link {
+  text-decoration: none;
+  color: #6c757d;
+}
+.nav-link:hover {
+  color: #f78f19;
+}
+
 .foto_receta {
   padding: 10px;
   display: flex;
   justify-content: space-around;
 }
-
 .foto_receta img {
   width: 100%;
   border-radius: 10px;
@@ -280,7 +257,6 @@ h5 {
   margin: 0 auto;
   max-width: 100%;
 }
-
 .video_receta iframe {
   width: 100%;
   border-radius: 10px;
@@ -289,42 +265,34 @@ h5 {
 .instrucciones_receta {
   padding: 10px;
 }
-
 .instrucciones_receta .icon_text {
   line-height: 2;
 }
-
 .instrucciones_receta .icon_text i {
   display: inline;
   color: #f78f19;
 }
-
 .instrucciones_receta .icon_text h3 {
   display: inline;
 }
-
 .instrucciones_receta .icon_text2 i {
   display: inline;
   color: #f78f19;
 }
-
 .instrucciones_receta .icon_text2 h3 {
   display: inline;
 }
-
 .instrucciones_receta h2 {
   text-align: left;
   color: #3d9915;
   font-weight: bold;
   /* font-size: 1.8vw; */
 }
-
 .instrucciones_receta h3 {
   color: #6c757d;
   /* font-size: 1.4vw; */
   text-align: left;
 }
-
 .instrucciones_receta h4 {
   color: #6c757d;
   /* font-size: 1.1vw; */
@@ -368,7 +336,6 @@ h5 {
 .img_prod1 {
   align-self: flex-end;
 }
-
 .img_prod1 img {
   height: 280px;
 }
@@ -376,11 +343,9 @@ h5 {
 .text_prod1 {
   padding-left: 10px;
 }
-
 .text_prod1 h3 {
   color: #f78f19;
 }
-
 .text_prod1 hr {
   display: none;
 }
@@ -404,7 +369,6 @@ h5 {
 .img_prod2 {
   align-self: flex-end;
 }
-
 .img_prod2 img {
   height: 280px;
 }
@@ -412,11 +376,9 @@ h5 {
 .text_prod2 {
   padding-left: 10px;
 }
-
 .text_prod2 h3 {
   color: #f78f19;
 }
-
 .text_prod2 hr {
   display: none;
 }
@@ -440,7 +402,6 @@ h5 {
 .img_prod3 {
   align-self: flex-end;
 }
-
 .img_prod3 img {
   height: 280px;
 }
@@ -448,11 +409,9 @@ h5 {
 .text_prod3 {
   padding-left: 10px;
 }
-
 .text_prod3 h3 {
   color: #f78f19;
 }
-
 .text_prod3 hr {
   display: none;
 }
@@ -509,7 +468,6 @@ h5 {
 .separador {
   padding-top: 50px;
 }
-
 .separador h4 {
   color: #3d9915;
 }
@@ -518,7 +476,15 @@ h5 {
 /*----------------------- ENTRE 320 Y 575 PX -----------------------*/
 @media (min-width: 320px) and (max-width: 575px) {
   .logo {
-    height: 60px;
+    display: none;
+  }
+
+  .logo_mobile {
+    display: inline-block;
+  }
+
+  .logo_mobile img {
+    height: 50px;
   }
 
   .imagen_intro .side1_normal {
@@ -550,7 +516,7 @@ h5 {
 
   .img_chef1_small img {
     width: 100px;
-    border: 1px solid #cccccc;
+    border: solid 1px #cccccc;
     border-radius: 50px;
   }
 
@@ -566,7 +532,7 @@ h5 {
 
   .img_chef2_small img {
     width: 100px;
-    border: 1px solid #cccccc;
+    border: solid 1px #cccccc;
     border-radius: 50px;
   }
 
@@ -582,7 +548,7 @@ h5 {
 
   .img_chef3_small img {
     width: 100px;
-    border: 1px solid #cccccc;
+    border: solid 1px #cccccc;
     border-radius: 50px;
   }
 
@@ -645,7 +611,15 @@ h5 {
 /*----------------------- BOOTSTRAP MD - ENTRE 576 Y 768 PX -----------------------*/
 @media (min-width: 576px) and (max-width: 768px) {
   .logo {
-    height: 70px;
+    display: none;
+  }
+
+  .logo_mobile {
+    display: inline-block;
+  }
+
+  .logo_mobile img {
+    height: 50px;
   }
 
   .img_chef1 {
@@ -658,7 +632,7 @@ h5 {
 
   .img_chef1_small img {
     width: 150px;
-    border: 1px solid #cccccc;
+    border: solid 1px #cccccc;
     border-radius: 15px;
   }
 
@@ -672,7 +646,7 @@ h5 {
 
   .img_chef2_small img {
     width: 150px;
-    border: 1px solid #cccccc;
+    border: solid 1px #cccccc;
     border-radius: 15px;
   }
 
@@ -686,7 +660,7 @@ h5 {
 
   .img_chef3_small img {
     width: 150px;
-    border: 1px solid #cccccc;
+    border: solid 1px #cccccc;
     border-radius: 15px;
   }
 
@@ -716,7 +690,7 @@ h5 {
   }
 
   .img_side--historia {
-    width: 200px;
+    width: 500px;
   }
 
   .texto_nutrientes {
@@ -745,6 +719,10 @@ h5 {
 }
 /*----------------------- BOOTSTRAP LG - ENTRE 769 Y 992 PX -----------------------*/
 @media (min-width: 769px) and (max-width: 992px) {
+  .logo_mobile {
+    display: none;
+  }
+
   .img_chef1 img {
     height: 180px;
   }
@@ -819,6 +797,9 @@ h5 {
   .img_side--historia {
     width: 260px;
   }
+}
+.item {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

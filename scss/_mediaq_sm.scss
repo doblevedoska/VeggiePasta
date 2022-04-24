@@ -1,0 +1,148 @@
+$color-principal: #3d9915;
+$color-secundario: #6c757d;
+$color-pop: #f78f19;
+$border: solid 1px #cccccc;
+
+/*----------------------- ENTRE 320 Y 575 PX -----------------------*/
+
+@media (min-width: 320px) and (max-width: 575px){
+
+    .logo { 
+        display: none;
+    }
+    
+    .logo_mobile {
+        display: inline-block;
+    }
+    
+    .logo_mobile img{
+        height: 50px;
+    }
+    
+    .imagen_intro .side1_normal{
+        display: none;
+    }
+    
+    .imagen_intro .side1_small{
+        display: inline-block;
+        width: 99%;
+    }
+    
+    .imagen_qsomos .side2_normal{
+        display: none;
+    }
+    
+    .imagen_qsomos .side2_small{
+        display: inline-block;
+        width: 99%;
+    }
+    
+    
+    .img_chef1{
+            display: none; 
+        }
+    .img_chef1_small{
+            display: inline-block;
+            margin: auto;
+        }
+    .img_chef1_small img{
+            width: 100px;
+            border: $border;
+            border-radius: 50px;
+        }
+    
+        /*CHEF2*/
+    .img_chef2{
+            display: none; 
+        }
+    
+    .img_chef2_small{
+            display: inline-block;
+            margin: auto;
+        }
+    
+    .img_chef2_small img{
+            width: 100px;
+            border: $border;
+            border-radius: 50px;
+        }
+    
+        /*CHEF3*/
+    
+    
+    .img_chef3{
+            display: none; 
+        }
+    
+    .img_chef3_small{
+            display: inline-block;
+            margin: auto;
+        }
+    
+    .img_chef3_small img{
+            width: 100px;
+            border: $border;
+            border-radius: 50px;
+        }
+    
+        /*RECETAS*/
+    
+        .body_recetas{
+            flex-direction: column;
+            display: flex;
+            justify-content: space-around;
+        }
+    
+    
+        .text_prod1 hr { 
+            display: inline-block;
+            width:100%; 
+            height:1px; 
+            background: $color-principal;
+        }
+    
+        .text_prod2 hr { 
+            display: inline-block;
+            width:100%; 
+            height:1px; 
+            background: $color-principal;
+        }
+    
+        .text_prod3 hr { 
+            display: inline-block;
+            width:100%; 
+            height:1px; 
+            background: $color-principal;
+        }
+    
+        .img_side--historia{
+            width: 360px;
+        }
+    
+        .texto_nutrientes{
+            font-size: 2.2vw;
+        }
+        
+        .separador h4{
+            font-size: 2.2vw;
+        }
+        
+        .separador{
+            padding-top: 25px;
+        }
+        
+        .img_size--hist_2{
+            height: 80px;
+        }
+        
+        .img_size--hist_2--logo{
+            height: 25px;
+        }
+        
+        .img_size--hist_2--otros{
+            height: 25px;
+        }
+        
+    
+    
+    }

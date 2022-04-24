@@ -1,0 +1,92 @@
+//variables
+$color-principal: #3d9915;
+$color-secundario: #6c757d;
+$color-pop: #f78f19;
+$border: solid 1px #cccccc;
+
+/*----------------------- BOOTSTRAP LG - ENTRE 769 Y 992 PX -----------------------*/
+
+
+@media (min-width: 769px) and (max-width: 992px){
+
+    .logo_mobile{
+        display: none;
+    }
+
+    .img_chef1 img{
+        height: 180px;
+    }
+    
+    .img_chef2 img{
+        height: 180px;
+    }
+    
+    .img_chef3 img{
+        height: 180px;
+    }
+    /* .text_chef1 h3{
+        font-size: 2vw;
+    }
+    .text_chef1 h4{
+        font-size: 90%;
+    }
+
+    .text_chef1 p{
+        font-size: 80%;
+    }
+
+    .text_chef2 h3{
+        font-size: 2vw;
+    }
+
+    .text_chef2 h4{
+        font-size: 90%;
+    }
+
+    .text_chef2 p{
+        font-size: 80%;
+    }
+
+    .text_chef3 h3{
+        font-size: 2vw;
+    }
+
+    .text_chef3 h4{
+        font-size: 90%;
+    }
+
+    .text_chef3 p{
+        font-size: 80%;
+    } */
+
+    .text_prod1 hr { 
+        display: inline-block;
+        width:100%; 
+        height:1px; 
+        background: $color-principal;
+    }
+
+    .text_prod2 hr { 
+        display: inline-block;
+        width:100%; 
+        height:1px; 
+        background: $color-principal; 
+    }
+
+    .text_prod3 hr { 
+        display: inline-block;
+        width:100%; 
+        height:1px; 
+        background: $color-principal; 
+    }
+
+    .img_side--contact{
+        height: 220px;
+    }
+
+    .img_side--historia{
+        width: 260px;
+    }
+    
+
+}

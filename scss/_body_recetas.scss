@@ -1,0 +1,118 @@
+//variables
+$color-principal: #3d9915;
+$color-secundario: #6c757d;
+$color-pop: #f78f19;
+
+/*############################################################################# BODY RECETAS #############################################################################*/
+
+.nav-link{
+    text-decoration: none;
+    color: $color-secundario;
+    &:hover{
+        color: $color-pop;
+    }  
+}
+
+.foto_receta { 
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+
+.video_receta { 
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;   
+    margin: 0 auto;
+    max-width: 100%;
+
+    iframe{
+        width: 100%; 
+        border-radius: 10px;
+    }
+}
+
+
+.instrucciones_receta { 
+    padding: 10px;
+
+    .icon_text {
+        line-height: 2;
+
+        i{
+            display: inline;
+            color: $color-pop;
+        }
+
+        h3{
+            display: inline;
+        }
+    }
+
+    .icon_text2 {
+        i{
+            display: inline;
+            color: $color-pop;
+        }
+
+        h3{
+            display: inline;
+        }
+
+    } 
+
+    h2{
+        text-align: left;
+        color: $color-principal;
+        font-weight: bold;
+        /* font-size: 1.8vw; */
+    }
+
+    h3{
+        color: $color-secundario;
+        /* font-size: 1.4vw; */
+        text-align: left;
+    }
+
+    h4{
+        color: $color-secundario;
+        /* font-size: 1.1vw; */
+        font-weight: bold;
+    
+    }
+}
+
+
+
+.instrucciones_receta ul{
+    line-height: 2;
+    /* font-size: 1.1vw; */
+    color: $color-secundario;
+    list-style: none;
+}
+
+.instrucciones_receta ul li::before {
+    content: "\2022";  
+    color: $color-pop;
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+.instrucciones_receta ol{
+    line-height: 2;
+    /* font-size: 1.1vw; */
+    color: $color-secundario;
+}
+
+.instrucciones_receta ol li::marker {
+    color: $color-pop;
+}

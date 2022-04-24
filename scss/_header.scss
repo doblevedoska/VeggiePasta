@@ -1,0 +1,27 @@
+$gradient-down: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 20%, #dbfbde 100%);
+/*--------------------------------------------GRID HEADER--------------------------------------------------*/
+
+.logo { 
+    grid-area: logo; 
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo_mobile{
+    display: none;
+}
+
+
+/*NAVBAR CON BOOTSTRAP*/
+
+.navbar{
+    /*background-color: #c7f9cc;*/
+    background: $gradient-down;
+    border-radius: 10px;
+}

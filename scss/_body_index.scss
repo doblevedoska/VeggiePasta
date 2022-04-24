@@ -1,0 +1,143 @@
+//Variables
+$gradient-right: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, #dbfbde 100%);
+$gradient-left: linear-gradient(90deg, #dbfbde 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
+$border: solid 1px #cccccc;
+
+/*############################################################################# BODY INDEX #############################################################################*/
+
+/*SECCION INTRO*/
+
+.container-fluid{
+    margin-top: 20px;
+}
+
+.container_body_i{
+    border: $border;
+    background: $gradient-right;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.imagen_intro { 
+    padding: 10px 10px 0px 10px;
+}
+
+.imagen_intro .side1_normal{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.imagen_intro .side1_small{
+    display: none;
+    border-radius: 10px;
+}
+
+.texto_intro { 
+    padding: 10px 20px 10px 10px;
+}
+
+
+/*SECCION QUIENES SOMOS*/
+
+.container_body_qs{
+    border: solid 1px #cccccc;
+    background: $gradient-left;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.texto_qsomos { 
+    padding: 10px 10px 10px 20px;
+}
+
+.imagen_qsomos { 
+    padding: 10px;
+}
+
+.imagen_qsomos .side2_normal{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.imagen_qsomos .side2_small{
+    display: none;
+    border-radius: 10px;
+}
+
+/*NOS RECOMIENDAN*/
+
+.nos_recomiendan { 
+    text-align: center;
+    border-bottom: 10px;
+}
+
+/*SECCION CHEFS*/
+
+.img_chef1{    
+    /*background-color: #1aa7a4;*/
+    align-self: flex-end;
+}
+.img_chef1 img{
+    height: 260px;
+}
+
+.img_chef1_small{
+    display: none;
+}
+
+
+/* .text_chef1{
+    padding-left: 10px;
+} */
+
+.text_chef1 p{
+    font-style: italic;
+}
+
+.img_chef2{
+    /*background-color: #1aa7a4;*/
+    align-self: flex-end;
+}
+
+.img_chef2 img{
+    height: 260px;
+}
+
+.img_chef2_small{
+    display: none;
+}
+
+/* .text_chef2{
+    padding-left: 10px;
+} */
+
+.text_chef2 p{
+    font-size: 90%;
+    font-style: italic;
+}
+
+.img_chef3{
+    align-self: flex-end;
+}
+
+.img_chef3 img{
+    height: 260px;
+}
+
+.img_chef3_small{
+    display: none;
+}
+/* .text_chef3{
+    padding-left: 10px;
+} */
+
+.text_chef3 p{
+    font-size: 90%;
+    font-style: italic;
+}
+
