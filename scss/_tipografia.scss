@@ -3,15 +3,21 @@
     src: url('../assets/font/Ubuntu-Regular.ttf');
 }
 
-$color-principal: #3d9915;
-$color-secundario: #6c757d;
-$fuente: "Ubuntu-Regular";
+//Map
+$estilo-fuente:(
+color-principal: #3d9915,
+color-secundario: #6c757d,
+fuente: "Ubuntu-Regular",
+color-pop: #f78f19
+);
+
+
 
 body{
     /*background-image: url(../assets/background/rename.webp);*/
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: $fuente;
+    font-family: map-get($estilo-fuente, fuente);
 }
 
 p{
@@ -19,7 +25,7 @@ p{
     line-height: 2;
     font-weight: 200;
     /* font-size: 1.1vw; */
-    color: $color-secundario;
+    color: map-get($estilo-fuente, color-secundario);
 }
 
 p strong{
@@ -28,18 +34,18 @@ p strong{
 }
 
 h2{
-    color: $color-principal;
+    color: map-get($estilo-fuente,color-principal);
 
 }
 
 h3{
-    color: $color-principal;
+    color: map-get($estilo-fuente,color-principal);
 }
 
 h4{
-    color: $color-principal;
+    color: map-get($estilo-fuente,color-principal);
 }
 
 h5{
-    color: $color-secundario; 
+    color: map-get($estilo-fuente,color-secundario); 
 }

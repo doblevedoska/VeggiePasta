@@ -4,11 +4,16 @@ $glow-input: #c7f9cc;
 
 /*############################################################################# BODY CONTACTO #############################################################################*/
 
+.container_body_c{
+    @include mixin_tarjeta();
+}
+
 .item_contacto{
     padding: 10px;
 }
 
 .img_side--contact{
+    padding-top: 20px;
     height: 300px;
     border-radius: 10px;
     filter: grayscale(100) opacity(.6);

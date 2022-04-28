@@ -17,7 +17,6 @@ $border: solid 1px #cccccc;
     border-radius: 15px;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    padding-top: 10px;
 }
 
 .imagen_intro { 
@@ -41,14 +40,14 @@ $border: solid 1px #cccccc;
 
 /*SECCION QUIENES SOMOS*/
 
+/*container_body_qs EXTIENDE de container_body_i*/
 .container_body_qs{
-    border: solid 1px #cccccc;
+    @extend .container_body_i;
+
     background: $gradient-left;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
 }
+
+
 
 
 .texto_qsomos { 

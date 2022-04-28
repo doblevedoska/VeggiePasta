@@ -1,17 +1,20 @@
-//variables
-$color-principal: #3d9915;
-$color-secundario: #6c757d;
-$color-pop: #f78f19;
+
 
 /*############################################################################# BODY RECETAS #############################################################################*/
 
+/*MAPEO de colores y fuentes*/
 .nav-link{
     text-decoration: none;
-    color: $color-secundario;
+    color: map-get($estilo-fuente,color-secundario);
     &:hover{
-        color: $color-pop;
+        color: map-get($estilo-fuente,color-pop);
     }  
 }
+
+.container_body_r{
+    @include mixin_tarjeta();
+}
+
 
 .foto_receta { 
     padding: 10px;
@@ -48,7 +51,7 @@ $color-pop: #f78f19;
 
         i{
             display: inline;
-            color: $color-pop;
+            color: map-get($estilo-fuente,color-pop);
         }
 
         h3{
@@ -59,7 +62,7 @@ $color-pop: #f78f19;
     .icon_text2 {
         i{
             display: inline;
-            color: $color-pop;
+            color: map-get($estilo-fuente,color-pop);
         }
 
         h3{
@@ -70,19 +73,19 @@ $color-pop: #f78f19;
 
     h2{
         text-align: left;
-        color: $color-principal;
+        color: map-get($estilo-fuente,color-principal);
         font-weight: bold;
         /* font-size: 1.8vw; */
     }
 
     h3{
-        color: $color-secundario;
+        color: map-get($estilo-fuente,color-secundario);
         /* font-size: 1.4vw; */
         text-align: left;
     }
 
     h4{
-        color: $color-secundario;
+        color: map-get($estilo-fuente,color-secundario);
         /* font-size: 1.1vw; */
         font-weight: bold;
     
@@ -94,13 +97,13 @@ $color-pop: #f78f19;
 .instrucciones_receta ul{
     line-height: 2;
     /* font-size: 1.1vw; */
-    color: $color-secundario;
+    color: map-get($estilo-fuente,color-secundario);
     list-style: none;
 }
 
 .instrucciones_receta ul li::before {
     content: "\2022";  
-    color: $color-pop;
+    color: map-get($estilo-fuente,color-pop);
     font-weight: bold; 
     display: inline-block; 
     width: 1em; 
@@ -110,9 +113,9 @@ $color-pop: #f78f19;
 .instrucciones_receta ol{
     line-height: 2;
     /* font-size: 1.1vw; */
-    color: $color-secundario;
+    color: map-get($estilo-fuente,color-secundario);
 }
 
 .instrucciones_receta ol li::marker {
-    color: $color-pop;
+    color: map-get($estilo-fuente,color-pop);
 }

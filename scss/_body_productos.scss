@@ -1,7 +1,4 @@
-//Variables
-$color-principal: #3d9915;
-$color-secundario: #6c757d;
-$color-pop: #f78f19;
+
 
 /*############################################################################# BODY PRODUCTOS #############################################################################*/
 
@@ -23,7 +20,7 @@ $color-pop: #f78f19;
 .text_prod1{
     padding-left: 10px;
     h3{
-        color: $color-pop;
+        color: map-get($estilo-fuente,color-pop);
     }
     hr { 
         display: none;
@@ -33,13 +30,13 @@ $color-pop: #f78f19;
 
 .text_prod1 ul{
     line-height: 2;
-    color: $color-secundario;
+    color: map-get($estilo-fuente,color-secundario);
     list-style: none;
 }
 
 .text_prod1 ul li::before {
     content: "\2022";  
-    color: $color-pop; 
+    color: map-get($estilo-fuente,color-pop); 
     font-weight: bold; 
     display: inline-block; 
     width: 1em; 
@@ -59,7 +56,7 @@ $color-pop: #f78f19;
 .text_prod2{
     padding-left: 10px;
     h3{
-        color: $color-pop;
+        color: map-get($estilo-fuente,color-pop);
     }
     hr { 
         display: none;
@@ -69,13 +66,13 @@ $color-pop: #f78f19;
 
 .text_prod2 ul{
     line-height: 2;
-    color: #6c757d;
+    color: map-get($estilo-fuente,color-secundario);
     list-style: none;
 }
 
 .text_prod2 ul li::before {
     content: "\2022";  
-    color: $color-pop; 
+    color: map-get($estilo-fuente,color-pop); 
     font-weight: bold; 
     display: inline-block; 
     width: 1em; 
@@ -94,7 +91,7 @@ $color-pop: #f78f19;
 .text_prod3{
     padding-left: 10px;
     h3{
-        color: $color-pop;
+        color: map-get($estilo-fuente,color-pop);
     }
     hr { 
         display: none;
@@ -110,7 +107,7 @@ $color-pop: #f78f19;
 
 .text_prod3 ul li::before {
     content: "\2022";  
-    color: $color-pop; 
+    color: map-get($estilo-fuente,color-pop); 
     font-weight: bold; 
     display: inline-block; 
     width: 1em; 

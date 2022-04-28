@@ -1,9 +1,19 @@
-//variables
-$color-principal: #3d9915;
-$color-secundario: #6c757d;
-$color-pop: #f78f19;
+
 
 /*############################################################################# BODY HISTORIA #############################################################################*/
+
+/*mixin_tarjeta se utiliza en historia, recetas y contacto*/
+@mixin mixin_tarjeta{
+    border: $border;
+    background: $gradient-right;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.container_body_h{
+    @include mixin_tarjeta();
+}
 
 .img_side--historia{
     width: 345px;
@@ -26,6 +36,6 @@ $color-pop: #f78f19;
     padding-top: 50px;
 
     h4{
-        color: $color-principal;
+        color: map-get($estilo-fuente,color-principal);
     }
 }
